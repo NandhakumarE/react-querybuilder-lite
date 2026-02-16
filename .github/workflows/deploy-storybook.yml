@@ -1,12 +1,9 @@
 # Deploy Storybook to GitHub Pages
-# Triggers: Push to main branch only
+# Manual trigger only — automated deploys run via release.yml
 name: Deploy Storybook
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: read
